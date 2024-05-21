@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+html, body {
+    width: 100%;
+    height: 100%; /* Full height and width for html and body */
+}
+#main {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: hidden !important; /* Disables vertical scrolling */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+/* Hide scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Nav Top Css */
+/* Styles the navigation bar at the top of the page */
+#nav_top {
+    width: 94.2vw; /* Sets the width of the navigation bar */
+    height: 15vh; /* Sets the height of the navigation bar */
+    padding: 0 4.5vw 0 4vw; /* Adds padding to the navigation bar */
+    display: flex; /* Displays the elements inside the navigation bar as a flex container */
+    justify-content: space-between; /* Distributes the elements inside the navigation bar evenly */
+    align-items: center; /* Centers the elements vertically inside the navigation bar */
+    position: absolute; /* Positions the navigation bar absolutely */
+    z-index: 1; /* Sets the stacking order of the navigation bar */
+}
+#nav_top>img {
+    height: 100px; /* Sets height of the logo image */
+}
+/* Nav Top Button*/
+#nav_top>button {
+    padding: 7px 16px; /* Adds padding to the button */
+    font-family: "druk heavy"; /* Sets the font family */
+    font-size: 20px; /* Sets the font size */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    font-weight: 800; /* Sets the font weight */
+    line-height: 24px; /* Sets the line height */
+    color: #fff; /* Sets the text color */
+    white-space: nowrap; /* Prevents text from wrapping */
+    background-color: rgb(199, 29, 29); /* Sets the background color */
+    border-style: none; /* Removes the border style */
+    cursor: pointer; /* Adds pointer cursor on hover */
+}
+#nav_top>i {
+    font-size: 2.5vw;
+    display: none; /* Hides the icon by default */
+}
+
+/* Nav Left Css */
+#nav_left {
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    gap: 2vmax;
+    border-right: 2px solid rgb(43, 42, 42); /* Adds right border with specified color */
+}
+
+/* Bottle Image */
+#bottle {
+    position: absolute;
+    height: 95vh;
+    top: 0%;
+    left: 21%;
+    z-index: 990;
+    border-image: 0 0 2vmax black; /* Adds border image */
+}
+
+/* Page1 Css */
+#page1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Center contents and position relatively */
+}
+#page1 h1 {
+    width: 60vw;
+    background-color: rgb(153, 13, 13);
+    font-family: 'Antom', sans-serif;
+    font-size: 9vw;
+    font-weight: 900;
+    text-align: center;
+    word-spacing: -1.5vw;
+    text-transform: uppercase;
+    line-height: 12vw;
+    background-image: url(img/texture.png); /* Adds texture image */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text; /* Adds the standard property 'background-clip' */
+        -webkit-text-fill-color: transparent;
+        -webkit-font-smoothing: antialiased; /* Smooths font rendering */
+    }
+    #page1_cola_image {
+        height: 15vh;
+        position: absolute;
+        top: 17%;
+        left: 34.5%;
+        transform: rotate(-15deg); /* Positions and rotates dog image */
+    }
+
+    /* Page 2 Css */
+    #page2 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4.1vw 0 10vw; /* Adds padding */
+    }
+    #page2_part1 {
+        width: 25vw;
+        height: 79vh;
+    }
+    #page2_part1 h3 {
+        font-family: "dancing script";
+        margin-bottom: 12px; /* Adds "margin below heading */
+    }
+    #page2_part1 h1 {
+        width: 25vw;
+        height: 30vh;
+        font-size: 7vw;
+        line-height: 14vh;
+        font-weight: 500;
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        word-spacing: -1vmax;
+        background: url(img/texture.png); /* Adds texture background */
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text; /* Adds the standard property 'background-clip' */
+        -webkit-text-fill-color: transparent;
+        background-color: black;
+        -webkit-font-smoothing: antialiased;
+    }
+    #page2_part1>p {
+        font-family: Gilroy;
+        color: #111;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-bottom: 15px; /* Adds margin below paragraph */
+    }   
+    #page2_part1>button {
+        padding: 10px 20px;
+        font-family: "druk heavy";
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 800;
+        line-height: 20px;
+        white-space: nowrap; /* Prevents text wrapping */
+        background-color: black;
+        border-style: none;
+        cursor: pointer;
+        color: #fff; /* Styles the button */
+    }
+    #page2_part2 {
+        width: 26.5vw;
+        height: 45vh;
+        padding: 3.5vmax 3.5vmax;
+        border: 0.2vmax solid black;
+        box-shadow: 0 0 0.2vmax black;
+        font-family: Gilroy; /* Adds border and shadow */
+    }
+    #page2_part2 h3 {
+        font-size: 15px;
+        margin-bottom: 3px;
+        font-weight: 600; /* Styles heading */
+    }
+    #page2_part2 h5 {
+        font-size: 13px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #666; /* Styles subheading */
+    }
+    #box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 0.2vmax solid black;
+        margin-bottom: 1vh; /* Adds top border and margin */
+    }
+    #page2_part2 p {
+        font-size: 10px;
+        width: 12vw;
+        color: #111;
+        line-height: 13px;
+        font-weight: 600; /* Styles paragraph */
+    }
+    #box h2 {
+        font-size: 40px;
+        font-family: "druk heavy"; /* Styles heading */
+    }
+    #box h2 span {
+        font-size: 30px; /* Styles span within heading */
+    }
+
+    /* page 3 css */
+    #page3 {
+        width: 100vw;
+        height: 110vh;
+        padding: 0 5vmax 0 10vmax; /* Adds padding */
+    }
+    #page3 h1 {
+        width: 85vw;
+        font-size: 13vw;
+        line-height: 18.5vw;
+        font-weight: 100;
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+        background: url(img/texture.png); /* Adds texture background */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text; /* Adds the standard property 'background-clip' */
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(177, 29, 29);
+}
+#page3_text {
+    display: flex;
+    justify-content: space-between; /* Positions text sections */
+}
+#page3_text_part1 a img {
+    width: 25vw;
+    margin-top: 3vh; /* Styles image */
+}
+#page3_text_part1 h5 {
+    width: 23vw;
+    font-size: 2vw;
+    margin-top: 3vh;
+    line-height: 4vh;
+    font-family: Gilroy; /* Styles heading */
+}
+#page3_text_part2 {
+    width: 30vw;
+    padding: 1vmax 2vmax; /* Adds padding */
+}
+#page3_text_part2 h5 {
+    width: 25vw;
+    font-size: 1vmax;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100; /* Styles heading */
+}
+#page3_text_part2 h2 {
+    margin-top: 2vmax;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: 100;
+    letter-spacing: 0.05vmax; /* Styles subheading */
+}
+#page3_text_part2 p {
+    margin-top: 3vh;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100; /* Styles paragraph */
+}   
+
+/* Page 5 css */
+#page5 {
+    width: 100vw;
+    height: 110vh;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; /* Centers content vertically */
+}
+#page5 h5 {
+    margin-top: 3vh;
+    width: 30vw;
+    font-family: 'Anton', sans-serif;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 9.5vh;
+    letter-spacing: 0.5vw;
+    text-transform: uppercase; /* Styles subheading */
+}
+#page5 h1 {
+    width: 30vw;
+    text-transform: uppercase;
+    font-family: 'Anton',sans-serif;
+    font-weight: 600;
+    font-size: 6.5vw;
+    background-color: black; /* Styles heading */
+}
+#page5_image_box {
+    width: 100vw;
+    height: 85vh;
+    padding: 0 3vw 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Positions images evenly */
+}
+#page5_bottel {
+    width: 15vw;
+    height: 60vh;
+    justify-content: center; /* Styles bottle */
+}
+#page5_bottel h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Gilroy; /* Styles heading */
+}
+#page5_bottel img {
+    width: 15vw; /* Styles image */
+}
+#image11 {
+    height: 48vh; /* Styles first image */
+}
+#image22 {
+    transform: rotate(-15deg); /* Rotates second image */
+}
+#image33 {
+    height: 47vh;
+    opacity: 0;
+    transform: rotate(-15deg); /* Styles and hides third image */
+}
+#image44 {
+    transform: rotate(-15deg); /* Rotates fourth image */
+}
+#image55 {
+    transform: rotate(-15deg); /* Rotates fifth image */
+}
+#page5_bottel h4 {
+    font-family: 'Dosis', sans-serif; /* Styles heading */
+}
+#page5_bottel h6 {
+    display: flex;
+    justify-content: space-around;
+    font-family: Gilroy;
+    font-size: 1.1vmax; /* Styles subheading */
+}
+
+/* Page 6 */
+#page6 {
+    width: 100vw;
+    height: 90vh;
+    padding: 0 0vw 0 9vw;
+    display: flex;
+    gap: 30px; /* Adds padding and gap */
+}
+#page6 img {
+    width: 50vw;
+    height: 62vh; /* Styles image */
+}
+#page5_part2 {
+    padding: 0 4vw 0 4vw;
+    width: 40vw;
+    height: 62vh; /* Adds padding and dimensions */
+}
+#page6_part2 h5 {
+    font-size: 2vmax;
+    font-family: Gilroy; /* Styles heading */
+}
+#page6_part2 h1 {
+    margin-top: 3vh;
+    width: 30vw;
+    font-family: 'Anton', sans-serif;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 9.5vh;
+    letter-spacing: 0.5vw;
+    text-transform: uppercase; /* Styles subheading */
+}
+#page6_part2 p {
+    margin-top: 3vh;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    color: #111; /* Styles paragraph */
+}
+#page6_part2>button {
+    margin-top: 3vh;
+    font-size: 1.2vmax;
+    padding: 0.8vmax 1.5vmax;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff;
+    background-color: #000;
+    border-style: none;
+    cursor: pointer; /* Styles button */
+}
